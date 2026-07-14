@@ -1,32 +1,32 @@
 [
     {
         "name": "Claude Fable 5",
-        "elo": 1509,
+        "elo": 1512,
         "type": "paid"
     },
     {
         "name": "GPT-5.5 Pro",
-        "elo": 1506,
+        "elo": 1505,
         "type": "paid"
     },
     {
         "name": "Gemini 3.1 Pro",
-        "elo": 1485,
+        "elo": 1488,
         "type": "paid"
     },
     {
         "name": "GLM-5.2 Max",
-        "elo": 1469,
+        "elo": 1470,
         "type": "free"
     },
     {
         "name": "Mimo V2.5 Pro",
-        "elo": 1466,
+        "elo": 1465,
         "type": "free"
     },
     {
         "name": "DeepSeek V4 Pro",
-        "elo": 1457,
+        "elo": 1456,
         "type": "free"
     }
 ]
