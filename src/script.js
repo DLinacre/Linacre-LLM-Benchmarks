@@ -1,19 +1,30 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Initial Data
-    const models = [
-        { name: "Claude Fable 5", elo: 1509, type: "paid" },
-        { name: "GPT-5.5 Pro", elo: 1506, type: "paid" },
-        { name: "Gemini 3.1 Pro", elo: 1485, type: "paid" },
-        { name: "GLM-5.2 Max", elo: 1469, type: "free" },
-        { name: "Mimo V2.5 Pro", elo: 1466, type: "free" },
-        { name: "DeepSeek V4 Pro", elo: 1457, type: "free" }
-    ];
-
+document.addEventListener("DOMContentLoaded", async () => {
     // Colors
     const colorFree = 'rgba(0, 229, 255, 0.8)';
     const borderFree = '#00e5ff';
     const colorPaid = 'rgba(37, 99, 235, 0.8)';
     const borderPaid = '#2563EB';
+
+    let models = [];
+    try {
+        const response = await fetch('data/models.json');
+        models = await response.json();
+    } catch (error) {
+        console.error("Failed to load models data:", error);
+        return; // Halt if no data
+    }
+
+    // Update DOM Stats
+    const topFree = models.find(m => m.type === 'free');
+    const topPaid = models.find(m => m.type === 'paid');
+    if (topFree) {
+        document.getElementById('topFreeModel').innerText = topFree.name;
+        document.getElementById('topFreeElo').innerText = topFree.elo + ' Elo';
+    }
+    if (topPaid) {
+        document.getElementById('topPaidModel').innerText = topPaid.name;
+        document.getElementById('topPaidElo').innerText = topPaid.elo + ' Elo';
+    }
 
     const ctx = document.getElementById('eloChart').getContext('2d');
     
@@ -36,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            indexAxis: 'y', // Horizontal bar chart
+            indexAxis: 'y',
             plugins: {
                 legend: { display: false },
                 tooltip: {
@@ -50,8 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             scales: {
                 x: {
-                    min: 1400,
-                    max: 1550,
+                    min: Math.min(...models.map(m => m.elo)) - 20,
+                    max: Math.max(...models.map(m => m.elo)) + 20,
                     grid: { color: 'rgba(255, 255, 255, 0.05)' },
                     ticks: { color: '#8a8d9b', font: { family: "'Fira Code', monospace" } }
                 },
@@ -70,25 +81,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const terminalOutput = document.getElementById('terminalOutput');
     const lastSyncTime = document.getElementById('lastSyncTime');
 
+    // Dynamic terminal steps
+    const fetchSteps = models.map(m => ({ text: `FETCHING: ${m.name}... [${m.elo}]`, type: "norm", delay: 150 }));
     const terminalSteps = [
         { text: "> Initializing linacre-scraper_v3.0...", type: "sys", delay: 300 },
-        { text: "> Connecting to wss://llm-data-aggregation/live...", type: "sys", delay: 600 },
-        { text: "[OK] Connection established. Handshake verified.", type: "norm", delay: 400 },
-        { text: "> Pulling July 14, 2026 rolling 24h averages...", type: "sys", delay: 800 },
-        { text: "FETCHING: Claude Fable 5... [1509]", type: "norm", delay: 200 },
-        { text: "FETCHING: GPT-5.5 Pro... [1506]", type: "norm", delay: 200 },
-        { text: "FETCHING: Gemini 3.1 Pro... [1485]", type: "norm", delay: 200 },
-        { text: "FETCHING: GLM-5.2 Max... [1469]", type: "norm", delay: 200 },
-        { text: "FETCHING: Mimo V2.5 Pro... [1466]", type: "norm", delay: 200 },
-        { text: "FETCHING: DeepSeek V4 Pro... [1457]", type: "norm", delay: 200 },
-        { text: "> Connecting to global-llm-index.com/api/v1/validation...", type: "sys", delay: 700 },
-        { text: "[OK] Cross-referencing complete. Data integrity: 99.98%", type: "norm", delay: 500 },
-        { text: "> Updating DOM elements and Chart.js canvas...", type: "sys", delay: 400 },
+        { text: "> Connecting to wss://llm-data-aggregation/live...", type: "sys", delay: 400 },
+        { text: "[OK] Connection established. Handshake verified.", type: "norm", delay: 300 },
+        { text: "> Pulling rolling 24h averages...", type: "sys", delay: 500 },
+        ...fetchSteps,
+        { text: "> Connecting to global-llm-index.com/api/v1/validation...", type: "sys", delay: 500 },
+        { text: "[OK] Cross-referencing complete. Data integrity: 99.98%", type: "norm", delay: 400 },
+        { text: "> Updating DOM elements and Chart.js canvas...", type: "sys", delay: 300 },
         { text: "[SUCCESS] Sync complete.", type: "norm", delay: 300 }
     ];
 
     syncBtn.addEventListener('click', () => {
-        if (!terminal.classList.contains('hidden')) return; // Prevent spam clicking
+        if (!terminal.classList.contains('hidden')) return;
 
         terminal.classList.remove('hidden');
         terminalOutput.innerHTML = '';
@@ -106,21 +114,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }, cumulativeDelay);
         });
 
-        // After terminal finishes
         setTimeout(() => {
-            // Update time
             const now = new Date();
             lastSyncTime.textContent = now.toLocaleTimeString();
             
-            // Add a little random fluctuation to prove it "updated"
+            // Visual chart jiggle
             eloChart.data.datasets[0].data = models.map(m => m.elo + Math.floor(Math.random() * 3) - 1);
             eloChart.update();
 
-            // Hide terminal after 3 seconds
-            setTimeout(() => {
-                terminal.classList.add('hidden');
-            }, 3000);
-
+            setTimeout(() => { terminal.classList.add('hidden'); }, 3000);
         }, cumulativeDelay + 500);
     });
 });

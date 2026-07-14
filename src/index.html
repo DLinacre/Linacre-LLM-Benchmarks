@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linacre LLM Benchmarks</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="A real-time, interactive dashboard visualizing the convergence of Open-Weight and Proprietary Large Language Models. Updated every 24 hours.">
+    <meta name="keywords" content="LLM, AI benchmarks, Large Language Models, GPT-5, Claude, Open Source AI">
+    <meta name="author" content="David Linacre">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lin4cre.github.io/Linacre-LLM-Benchmarks/">
+    <meta property="og:title" content="Linacre LLM Benchmarks">
+    <meta property="og:description" content="Real-time interactive dashboard visualizing Open-Weight vs Proprietary AI Models.">
+    <meta property="og:image" content="https://lin4cre.github.io/Linacre-LLM-Benchmarks/assets/banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lin4cre.github.io/Linacre-LLM-Benchmarks/">
+    <meta property="twitter:title" content="Linacre LLM Benchmarks">
+    <meta property="twitter:description" content="Real-time interactive dashboard visualizing Open-Weight vs Proprietary AI Models.">
+    <meta property="twitter:image" content="https://lin4cre.github.io/Linacre-LLM-Benchmarks/assets/banner.png">
+
+    <!-- Security CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:;">
+
     <link rel="stylesheet" href="style.css">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -23,7 +46,7 @@
                 <p>Live 24h Rolling Averages • July 14, 2026</p>
             </div>
             <div class="header-right">
-                <button id="syncBtn" class="glow-btn">
+                <button id="syncBtn" class="glow-btn" aria-label="Synchronize data">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3"/></svg>
                     Scrape & Sync
                 </button>
@@ -57,13 +80,13 @@
             <div class="stats-sidebar">
                 <div class="stat-card glass-panel">
                     <h3>Top Free Model</h3>
-                    <div class="stat-value free-text">GLM-5.2 Max</div>
-                    <p>1469 Elo</p>
+                    <div class="stat-value free-text" id="topFreeModel">-</div>
+                    <p id="topFreeElo">- Elo</p>
                 </div>
                 <div class="stat-card glass-panel">
                     <h3>Top Paid Model</h3>
-                    <div class="stat-value paid-text">Claude Fable 5</div>
-                    <p>1509 Elo</p>
+                    <div class="stat-value paid-text" id="topPaidModel">-</div>
+                    <p id="topPaidElo">- Elo</p>
                 </div>
                 <div class="stat-card glass-panel">
                     <h3>Last Sync</h3>
