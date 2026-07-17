@@ -236,9 +236,35 @@ body {
         .calc-layout { grid-template-columns: 1fr; }
     }
 
-    </style>
+    
+    /* GOD MODE CSS */
+    body.god-mode {
+        --bg-dark: #050000;
+        --glass-bg: rgba(20, 0, 5, 0.7);
+        --neon-green: #ff003c;
+        --neon-blue: #ff003c;
+        --neon-purple: #ff003c;
+        --text-main: #ffccd5;
+    }
+    body.god-mode .background-blobs { opacity: 0; }
+    body.god-mode #godCanvas { opacity: 1; }
+    body.god-mode .glass-panel { box-shadow: 0 8px 32px 0 rgba(255, 0, 60, 0.2); border-color: rgba(255, 0, 60, 0.2); }
+    
+    .god-deploy-btn {
+        background: linear-gradient(90deg, #ff003c, #9333ea);
+        border: none; padding: 10px 15px; border-radius: 8px; color: white;
+        font-weight: 800; cursor: pointer; margin-top: 15px; width: 100%;
+        box-shadow: 0 0 15px rgba(255,0,60,0.4); transition: 0.3s;
+        display: flex; align-items: center; justify-content: center; gap: 8px;
+        font-family: var(--font-ui); text-transform: uppercase; letter-spacing: 1px;
+    }
+    .god-deploy-btn:hover { transform: translateY(-2px); box-shadow: 0 0 25px rgba(255,0,60,0.8); }
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 </head>
 <body>
+<canvas id="godCanvas" style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:-1; pointer-events:none; opacity:0; transition: opacity 1s;"></canvas>
     <div class="background-blobs">
         <div class="blob pink"></div>
         <div class="blob purple"></div>
@@ -285,6 +311,12 @@ body {
                 Back to Linacre.site
             </a>
         </div>
+
+        
+            <li id="godModeToggle" style="color: #ff003c; text-shadow: 0 0 10px rgba(255,0,60,0.5); font-weight: 800; margin-top: 15px; border: 1px solid rgba(255,0,60,0.3);">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                GOD MODE
+            </li>
 
         <div class="auto-detect-box" id="osDetector">
             <span class="pulse-dot"></span> <span id="osText">Detecting OS...</span>
@@ -941,6 +973,143 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 });
 
-    </script>
+    
+// ==========================================
+// ⚡ GOD MODE: NEURAL ENGINE & NODE GENERATOR
+// ==========================================
+
+// Neural Network Canvas
+const canvas = document.getElementById('godCanvas');
+const ctx = canvas.getContext('2d');
+let width, height;
+let particles = [];
+let mouse = { x: -1000, y: -1000 };
+
+function resize() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+window.addEventListener('mousemove', e => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+});
+
+class Particle {
+    constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 2;
+        this.vy = (Math.random() - 0.5) * 2;
+        this.baseSize = Math.random() * 2 + 1;
+    }
+    update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+        
+        // Mouse repel
+        const dx = mouse.x - this.x;
+        const dy = mouse.y - this.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 150) {
+            this.x -= dx * 0.05;
+            this.y -= dy * 0.05;
+        }
+    }
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.baseSize, 0, Math.PI * 2);
+        ctx.fillStyle = '#ff003c';
+        ctx.fill();
+    }
+}
+
+for (let i = 0; i < 150; i++) particles.push(new Particle());
+
+function animate() {
+    ctx.clearRect(0, 0, width, height);
+    if(document.body.classList.contains('god-mode')) {
+        for (let i = 0; i < particles.length; i++) {
+            particles[i].update();
+            particles[i].draw();
+            for (let j = i + 1; j < particles.length; j++) {
+                const dx = particles[i].x - particles[j].x;
+                const dy = particles[i].y - particles[j].y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 120) {
+                    ctx.beginPath();
+                    ctx.moveTo(particles[i].x, particles[i].y);
+                    ctx.lineTo(particles[j].x, particles[j].y);
+                    ctx.strokeStyle = `rgba(255, 0, 60, ${1 - dist/120})`;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+    requestAnimationFrame(animate);
+}
+animate();
+
+// God Mode Toggle
+document.getElementById('godModeToggle').addEventListener('click', () => {
+    document.body.classList.toggle('god-mode');
+    if(document.body.classList.contains('god-mode')) {
+        document.getElementById('pageTitle').innerHTML = 'GOD MODE <span>SYSTEM OVERRIDE</span>';
+        document.getElementById('pageSubtitle').innerText = 'Neural routing active. Infrastructure unlocked.';
+    } else {
+        document.getElementById('pageTitle').innerHTML = 'Hardware <span>Matcher</span>';
+        document.getElementById('pageSubtitle').innerText = 'Calculate exactly which local LLMs your device can handle in real-time.';
+    }
+});
+
+// ZIP Generator Function
+window.generateNodeZip = async function(modelName, arch) {
+    if(!window.JSZip) { alert("JSZip loading... please try again in a second."); return; }
+    
+    // Auto switch to god mode for effect
+    if(!document.body.classList.contains('god-mode')) {
+        document.getElementById('godModeToggle').click();
+    }
+    
+    const zip = new JSZip();
+    const safeName = modelName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase() + "-node";
+    const shortModelName = modelName.split(' ')[0].toLowerCase();
+
+    // 1. Docker Compose
+    let dockerCompose = `version: '3.8'\nservices:\n  ollama:\n    image: ollama/ollama:latest\n    container_name: linacre_god_node\n    ports:\n      - "11434:11434"\n    volumes:\n      - ollama_data:/root/.ollama\n`;
+    if(arch === 'pc') {
+        dockerCompose += `    deploy:\n      resources:\n        reservations:\n          devices:\n            - driver: nvidia\n              count: all\n              capabilities: [gpu]\n`;
+    }
+    dockerCompose += `volumes:\n  ollama_data:\n`;
+    zip.file("docker-compose.yml", dockerCompose);
+
+    // 2. Shell Scripts
+    zip.file("start.sh", `#!/bin/bash\necho "⚡ Booting Linacre.site God-Mode AI Node..."\ndocker-compose up -d\necho "Waiting for server to initialize..."\nsleep 5\necho "Pulling and running ${modelName}..."\ndocker exec -it linacre_god_node ollama run ${shortModelName}\n`);
+    
+    zip.file("start.bat", `@echo off\necho ⚡ Booting Linacre.site God-Mode AI Node...\ndocker-compose up -d\necho Waiting for server to initialize...\ntimeout /t 5\necho Pulling and running ${modelName}...\ndocker exec -it linacre_god_node ollama run ${shortModelName}\n`);
+
+    // 3. Python API Client
+    const pyClient = `import requests\nimport json\n\nprint("🤖 Connecting to Local God-Mode Node...")\nurl = "http://localhost:11434/api/generate"\npayload = {\n    "model": "${shortModelName}",\n    "prompt": "You are a God-Mode AI deployed locally by Linacre.site. Explain your operational status in one badass sentence.",\n    "stream": False\n}\n\ntry:\n    response = requests.post(url, json=payload)\n    print("\n✨ RESPONSE:")\n    print(response.json()['response'])\nexcept Exception as e:\n    print(f"\n❌ Error: Is the docker container running?\n{e}")`;
+    zip.file("test_api.py", pyClient);
+
+    // 4. README
+    zip.file("README.md", `# ⚡ Linacre.site God-Mode Node: ${modelName}\n\nAuto-generated server configuration for your hardware.\n\n## How to run:\n1. Ensure Docker is installed.\n2. Run \`start.bat\` (Windows) or \`./start.sh\` (Mac/Linux).\n3. Run \`python test_api.py\` to verify API connectivity.\n\n*Generated by Linacre.site Hardware Matcher*`);
+
+    // Download
+    const content = await zip.generateAsync({type:"blob"});
+    const url = window.URL.createObjectURL(content);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${safeName}.zip`;
+    a.click();
+    window.URL.revokeObjectURL(url);
+};
+
+</script>
 </body>
 </html>
