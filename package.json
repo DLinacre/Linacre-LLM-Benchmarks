@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build-win": "electron-builder --win"
+    "build-win": "electron-builder --win -p never"
   },
   "keywords": [],
   "author": "David Linacre",
