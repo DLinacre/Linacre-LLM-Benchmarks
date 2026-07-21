@@ -1,3 +1,5 @@
+![Linacre-LLM-Benchmarks Banner](assets/banner.png)
+
 <div align="center">
   <img src="assets/banner.svg" alt="Linacre.site LLM Hub Banner" width="100%" />
 
