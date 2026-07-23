@@ -2,17 +2,22 @@
     "Text & Chat": [
         {
             "name": "Claude Fable 5",
-            "elo": 1525,
+            "elo": 1523,
             "type": "paid"
         },
         {
             "name": "Claude Opus 4.7 (Thinking)",
-            "elo": 1515,
+            "elo": 1516,
             "type": "paid"
         },
         {
             "name": "Claude Opus 4.7",
-            "elo": 1514,
+            "elo": 1513,
+            "type": "paid"
+        },
+        {
+            "name": "Claude Opus 4.6 (Thinking)",
+            "elo": 1512,
             "type": "paid"
         },
         {
@@ -21,38 +26,33 @@
             "type": "free"
         },
         {
-            "name": "Claude Opus 4.6 (Thinking)",
-            "elo": 1510,
-            "type": "paid"
-        },
-        {
             "name": "Metamuse Spark 1.1",
-            "elo": 1505,
+            "elo": 1504,
             "type": "free"
         },
         {
             "name": "GPT 5.6 Sol (xHigh)",
-            "elo": 1501,
+            "elo": 1502,
             "type": "paid"
         },
         {
             "name": "Kimi K3",
-            "elo": 1496,
-            "type": "paid"
-        },
-        {
-            "name": "Claude Opus 4.6",
-            "elo": 1496,
-            "type": "paid"
-        },
-        {
-            "name": "Gemini 3.1 Pro (Preview)",
-            "elo": 1494,
+            "elo": 1499,
             "type": "paid"
         },
         {
             "name": "Gemini 3 Pro",
-            "elo": 1493,
+            "elo": 1495,
+            "type": "paid"
+        },
+        {
+            "name": "Claude Opus 4.6",
+            "elo": 1494,
+            "type": "paid"
+        },
+        {
+            "name": "Gemini 3.1 Pro (Preview)",
+            "elo": 1492,
             "type": "paid"
         },
         {
@@ -62,12 +62,12 @@
         },
         {
             "name": "Qwen 3.7 Max",
-            "elo": 1482,
+            "elo": 1480,
             "type": "free"
         },
         {
             "name": "Claude Opus 4.8 (Thinking)",
-            "elo": 1481,
+            "elo": 1480,
             "type": "paid"
         },
         {
@@ -76,112 +76,112 @@
             "type": "paid"
         },
         {
-            "name": "GPT 5.5 (High)",
-            "elo": 1478,
+            "name": "Gemini 3.5 Flash (High)",
+            "elo": 1479,
             "type": "paid"
         },
         {
-            "name": "Gemini 3.5 Flash (High)",
-            "elo": 1478,
+            "name": "GPT 5.5 (High)",
+            "elo": 1476,
             "type": "paid"
         },
         {
             "name": "GPT 5.5",
-            "elo": 1474,
+            "elo": 1472,
             "type": "paid"
         },
         {
             "name": "GLM 5.2 Max",
-            "elo": 1470,
+            "elo": 1472,
             "type": "free"
         },
         {
             "name": "DeepSeek V4 Pro",
-            "elo": 1464,
+            "elo": 1462,
             "type": "free"
         },
         {
             "name": "Grok 4.20 (Beta 1)",
-            "elo": 1462,
+            "elo": 1460,
             "type": "paid"
         },
         {
             "name": "GLM 5.1",
-            "elo": 1457,
+            "elo": 1456,
             "type": "free"
         },
         {
             "name": "Gemini 3.5 Flash (Medium)",
-            "elo": 1452,
+            "elo": 1454,
             "type": "paid"
         }
     ],
     "WebDev & Code": [
         {
             "name": "Kimi K3",
-            "elo": 1690,
-            "type": "paid"
-        },
-        {
-            "name": "Claude Fable 5",
-            "elo": 1634,
+            "elo": 1689,
             "type": "paid"
         },
         {
             "name": "GPT 5.6 Sol (xHigh)",
-            "elo": 1634,
+            "elo": 1633,
+            "type": "paid"
+        },
+        {
+            "name": "Claude Fable 5",
+            "elo": 1632,
             "type": "paid"
         },
         {
             "name": "GLM 5.2 (Max)",
-            "elo": 1588,
+            "elo": 1591,
             "type": "free"
         },
         {
             "name": "Claude Opus 4.8 (Thinking)",
-            "elo": 1566,
-            "type": "paid"
-        },
-        {
-            "name": "Claude Opus 4.7 (Thinking)",
-            "elo": 1562,
+            "elo": 1564,
             "type": "paid"
         },
         {
             "name": "Claude Opus 4.7",
-            "elo": 1559,
+            "elo": 1561,
             "type": "paid"
         },
         {
-            "name": "Claude Sonnet 5 (High)",
-            "elo": 1556,
+            "name": "Claude Opus 4.7 (Thinking)",
+            "elo": 1560,
             "type": "paid"
         },
         {
             "name": "Grok 4.5",
+            "elo": 1557,
+            "type": "paid"
+        },
+        {
+            "name": "Claude Sonnet 5 (High)",
             "elo": 1554,
             "type": "paid"
         },
         {
             "name": "Claude Opus 4.6 (Thinking)",
-            "elo": 1547,
+            "elo": 1546,
             "type": "paid"
         },
         {
             "name": "GPT 5.5 (High)",
-            "elo": 1524,
+            "elo": 1527,
             "type": "paid"
         },
         {
             "name": "Metamuse Spark",
-            "elo": 1511,
+            "elo": 1513,
             "type": "free"
         }
     ],
     "Vision & Images": [
         {
             "name": "Claude Fable 5",
-            "elo": 1324,
+            "elo": 1325,
             "type": "paid"
         },
         {
@@ -191,7 +191,7 @@
         },
         {
             "name": "Claude Opus 4.6",
-            "elo": 1310,
+            "elo": 1313,
             "type": "paid"
         },
         {
@@ -201,37 +201,37 @@
         },
         {
             "name": "Claude Opus 4.8 (Thinking)",
-            "elo": 1305,
+            "elo": 1308,
             "type": "paid"
         },
         {
             "name": "Claude Opus 4.7",
-            "elo": 1303,
+            "elo": 1304,
             "type": "paid"
         },
         {
             "name": "Metamuse Spark",
-            "elo": 1298,
+            "elo": 1297,
             "type": "free"
         },
         {
             "name": "Gemini 3.5 Flash (Medium)",
-            "elo": 1294,
+            "elo": 1297,
             "type": "paid"
         },
         {
             "name": "Gemini 3 Pro",
-            "elo": 1294,
+            "elo": 1292,
             "type": "paid"
         },
         {
             "name": "GPT 5.5 (High)",
-            "elo": 1287,
+            "elo": 1285,
             "type": "paid"
         },
         {
             "name": "DeepSeek V4 Pro",
-            "elo": 1267,
+            "elo": 1268,
             "type": "free"
         }
     ]
