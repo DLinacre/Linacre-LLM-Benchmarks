@@ -1,8 +1,6 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: ["main"]
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
@@ -36,7 +34,7 @@ jobs:
         
       - name: Commit Data Update
         run: |
-          git config --local user.email "LIN4CRE@users.noreply.github.com"
+          git config --local user.email "DLinacre@users.noreply.github.com"
           git config --local user.name "David Linacre"
           git add src/data/models.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "bot: Automated daily LLM data sync" && git push)
@@ -44,6 +42,7 @@ jobs:
       - name: Move assets for Pages
         run: |
           mkdir -p public
+          cp index.html public/index.html
           cp -r src/* public/
           cp -r assets public/assets
           
