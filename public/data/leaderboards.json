@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0.0",
+  "dataset": "leaderboards",
+  "retrieved_at": "2026-11-25T17:28:29Z",
+  "source_summary": {
+    "source_id": "artificial_analysis",
+    "source_name": "Artificial Analysis API",
+    "status": "not_configured"
+  },
+  "data": {
+    "methodology_notice": "Each leaderboard uses an independent methodology and score scale. Scores from different leaderboards must not be merged or directly compared.",
+    "categories": {
+      "intelligence_index": {
+        "title": "Intelligence Index",
+        "methodology": "Artificial Analysis Intelligence Index (composite across reasoning, knowledge, and coding evaluations).",
+        "source_name": "Artificial Analysis API v2",
+        "source_url": "https://artificialanalysis.ai/",
+        "unit": "index (0-100)",
+        "entries": []
+      },
+      "coding_index": {
+        "title": "Coding Benchmarks",
+        "methodology": "Artificial Analysis Coding Index.",
+        "source_name": "Artificial Analysis API v2",
+        "source_url": "https://artificialanalysis.ai/",
+        "unit": "index (0-100)",
+        "entries": []
+      },
+      "math_index": {
+        "title": "Mathematics Benchmarks",
+        "methodology": "Artificial Analysis Math Index.",
+        "source_name": "Artificial Analysis API v2",
+        "source_url": "https://artificialanalysis.ai/",
+        "unit": "index (0-100)",
+        "entries": []
+      },
+      "output_speed": {
+        "title": "Model Output Speed",
+        "methodology": "Median output generation speed measured in tokens per second.",
+        "source_name": "Artificial Analysis API v2",
+        "source_url": "https://artificialanalysis.ai/",
+        "unit": "tokens/sec",
+        "entries": []
+      }
+    }
+  }
+}

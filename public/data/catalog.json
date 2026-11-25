@@ -1,0 +1,11 @@
+{
+  "schema_version": "2.0.0",
+  "dataset": "catalog",
+  "retrieved_at": "2026-11-25T17:28:29Z",
+  "source_summary": {
+    "source_id": "openrouter",
+    "source_name": "OpenRouter Models API",
+    "status": "unavailable"
+  },
+  "data": []
+}

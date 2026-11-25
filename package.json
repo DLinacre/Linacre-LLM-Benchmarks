@@ -1,27 +1,68 @@
 {
   "name": "linacre-llm-hub",
-  "version": "4.0.0",
-  "description": "Linacre LLM Hub and Hardware Matcher",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron .",
-    "build-win": "electron-builder --win -p never"
+  "version": "5.0.0",
+  "description": "Linacre LLM Hub — Verified AI Benchmarks, Model Pricing, Local AI Explorer & Hardware Compatibility Workstation",
+  "main": "electron/main.js",
+  "engines": {
+    "node": ">=22.0.0"
   },
-  "keywords": [],
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:python": "python3 -m unittest discover -s tests/python -p \"test_*.py\" -v",
+    "test:all": "npm run test && npm run test:python",
+    "data:refresh": "python3 scripts/update_data.py",
+    "start": "npm run build && electron .",
+    "build-win": "npm run build && electron-builder --win -p never",
+    "cap:sync": "npm run build && npx cap sync android"
+  },
+  "keywords": [
+    "llm",
+    "ai",
+    "benchmarks",
+    "ollama",
+    "gguf",
+    "openrouter",
+    "huggingface",
+    "hardware-calculator"
+  ],
   "author": "David Linacre",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "@capacitor/cli": "^7.6.8",
-    "electron": "^41.7.1",
-    "electron-builder": "^26.15.3"
+    "@capacitor/cli": "^8.4.2",
+    "electron": "^35.2.0",
+    "electron-builder": "^26.0.12",
+    "jsdom": "^26.1.0",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4"
   },
   "dependencies": {
     "@capacitor/android": "^8.4.2",
     "@capacitor/core": "^8.4.2"
   },
   "build": {
-    "appId": "site.linacre.llmhub",
-    "productName": "Linacre LLM Hub"
+    "appId": "com.linacre.llmhub",
+    "productName": "Linacre LLM Hub",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "${productName}-${version}-Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }

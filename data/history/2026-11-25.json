@@ -1,0 +1,20 @@
+{
+  "schema_version": "2.0.0",
+  "captured_at": "2026-11-25T17:28:29Z",
+  "counts": {
+    "trending_repos": 12,
+    "releases": 16,
+    "catalog_models": 0,
+    "local_models": 0
+  },
+  "source_statuses": {
+    "github_repos": "healthy",
+    "github_releases": "healthy",
+    "openrouter": "unavailable",
+    "huggingface": "unavailable",
+    "artificial_analysis": "not_configured",
+    "ollama_local": "user_configured",
+    "lmarena": "not_configured",
+    "mlcommons": "not_configured"
+  }
+}
