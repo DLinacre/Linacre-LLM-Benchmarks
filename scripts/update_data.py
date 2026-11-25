@@ -1,31 +1,17 @@
-import json
-import random
-import os
+#!/usr/bin/env python3
+"""Entry point for Linacre LLM Hub verified data refresh.
 
-DATA_PATH = "src/data/models.json"
+Replaces the legacy random-Elo script with the verified multi-source data engine.
+"""
 
-def main():
-    if not os.path.exists(DATA_PATH):
-        print(f"File not found: {DATA_PATH}")
-        return
+import sys
+from pathlib import Path
 
-    with open(DATA_PATH, "r") as f:
-        data = json.load(f)
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
-    # Simulate daily Elo drift from external data sources for all categories
-    for category, models in data.items():
-        for model in models:
-            drift = random.randint(-2, 3)
-            model["elo"] += drift
-        
-        # Re-sort by Elo descending
-        models.sort(key=lambda x: x["elo"], reverse=True)
-
-    with open(DATA_PATH, "w") as f:
-        json.dump(data, f, indent=4)
-        f.write("\n")
-
-    print("Successfully scraped and updated models.json with latest benchmark data.")
+from scripts.data_engine.run import run_all  # noqa: E402
 
 if __name__ == "__main__":
-    main()
+    sys.exit(run_all())

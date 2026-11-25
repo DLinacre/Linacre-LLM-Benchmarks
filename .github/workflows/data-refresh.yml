@@ -1,0 +1,44 @@
+name: Verified AI Data Refresh
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "data-refresh"
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run verified data engine
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ARTIFICIAL_ANALYSIS_API_KEY: ${{ secrets.ARTIFICIAL_ANALYSIS_API_KEY }}
+        run: python3 scripts/update_data.py
+
+      - name: Run Python data engine tests
+        run: python3 -m unittest discover -s tests/python -p "test_*.py" -v
+
+      - name: Commit verified data changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/data/ data/history/
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(data): update verified AI datasets"
+            git push
+          else
+            echo "No verified data changes to commit."
+          fi
