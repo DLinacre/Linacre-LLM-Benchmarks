@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "dataset": "sources",
-  "retrieved_at": "2026-11-25T17:28:29Z",
+  "retrieved_at": "2026-11-26T11:52:31Z",
   "source_summary": {
     "total_sources": 8
   },
@@ -13,10 +13,10 @@
       "data_obtained": "Open-source AI repository stars, forks, primary language, license, and last push date.",
       "auth_required": "Optional (GITHUB_TOKEN increases rate limit from 60/hr to 5,000/hr)",
       "access_tier": "Free",
-      "last_successful_retrieval": "2026-11-25T17:28:29Z",
+      "last_successful_retrieval": "2026-11-26T11:52:31Z",
       "status": "healthy",
       "record_count": 12,
-      "rate_limit_info": "Remaining: 7180",
+      "rate_limit_info": "Remaining: 4986",
       "limitations": "Curated set of prominent open-source AI repositories; does not fabricate trending growth velocity.",
       "errors": []
     },
@@ -27,7 +27,7 @@
       "data_obtained": "Official AI project releases, version tags, publication dates, and release links.",
       "auth_required": "Optional (GITHUB_TOKEN recommended)",
       "access_tier": "Free",
-      "last_successful_retrieval": "2026-11-25T17:28:35Z",
+      "last_successful_retrieval": "2026-11-26T11:52:35Z",
       "status": "healthy",
       "record_count": 16,
       "rate_limit_info": "Shares GitHub REST API quota",
@@ -41,14 +41,12 @@
       "data_obtained": "Model names, context windows, supported modalities, and published input/output/cached pricing.",
       "auth_required": "No (public catalogue endpoint)",
       "access_tier": "Free",
-      "last_successful_retrieval": null,
-      "status": "unavailable",
-      "record_count": 0,
+      "last_successful_retrieval": "2026-11-26T11:52:38Z",
+      "status": "healthy",
+      "record_count": 474,
       "rate_limit_info": "Public GET endpoint; refreshed on scheduled workflow runs",
       "limitations": "Reflects OpenRouter routing prices, which may differ from direct first-party provider pricing.",
-      "errors": [
-        "Network/parse error fetching https://openrouter.ai/api/v1/models: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
-      ]
+      "errors": []
     },
     {
       "id": "huggingface",
@@ -57,14 +55,12 @@
       "data_obtained": "Open-weight GGUF model repositories, creators, download counts, likes, tags, and licenses.",
       "auth_required": "No (public Hub API; optional HF_TOKEN for higher limits)",
       "access_tier": "Free",
-      "last_successful_retrieval": null,
-      "status": "unavailable",
-      "record_count": 0,
+      "last_successful_retrieval": "2026-11-26T11:52:38Z",
+      "status": "healthy",
+      "record_count": 40,
       "rate_limit_info": "Public Hub API rate limits apply",
       "limitations": "Open weights are not necessarily OSI open-source; always verify each model's license.",
-      "errors": [
-        "Network/parse error fetching https://huggingface.co/api/models?filter=gguf&sort=downloads&direction=-1&limit=40: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
-      ]
+      "errors": []
     },
     {
       "id": "artificial_analysis",
@@ -73,12 +69,13 @@
       "data_obtained": "Intelligence index, coding index, math index, output speed (tokens/sec), and latency.",
       "auth_required": "Yes (ARTIFICIAL_ANALYSIS_API_KEY secret)",
       "access_tier": "Free tier available with API key & attribution",
-      "last_successful_retrieval": null,
+      "last_successful_retrieval": "2026-11-25T17:28:29Z",
       "status": "not_configured",
       "record_count": 0,
       "rate_limit_info": "Per Artificial Analysis API tier",
       "limitations": "Requires ARTIFICIAL_ANALYSIS_API_KEY in GitHub Actions secrets. No synthetic scores are substituted.",
-      "errors": []
+      "errors": [],
+      "stale_fallback_used": true
     },
     {
       "id": "ollama_local",
