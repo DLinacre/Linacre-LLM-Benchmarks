@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "dataset": "sources",
-  "retrieved_at": "2026-11-26T11:52:31Z",
+  "retrieved_at": "2026-11-27T11:45:33Z",
   "source_summary": {
     "total_sources": 8
   },
@@ -13,7 +13,7 @@
       "data_obtained": "Open-source AI repository stars, forks, primary language, license, and last push date.",
       "auth_required": "Optional (GITHUB_TOKEN increases rate limit from 60/hr to 5,000/hr)",
       "access_tier": "Free",
-      "last_successful_retrieval": "2026-11-26T11:52:31Z",
+      "last_successful_retrieval": "2026-11-27T11:45:33Z",
       "status": "healthy",
       "record_count": 12,
       "rate_limit_info": "Remaining: 4986",
@@ -27,7 +27,7 @@
       "data_obtained": "Official AI project releases, version tags, publication dates, and release links.",
       "auth_required": "Optional (GITHUB_TOKEN recommended)",
       "access_tier": "Free",
-      "last_successful_retrieval": "2026-11-26T11:52:35Z",
+      "last_successful_retrieval": "2026-11-27T11:45:37Z",
       "status": "healthy",
       "record_count": 16,
       "rate_limit_info": "Shares GitHub REST API quota",
@@ -41,9 +41,9 @@
       "data_obtained": "Model names, context windows, supported modalities, and published input/output/cached pricing.",
       "auth_required": "No (public catalogue endpoint)",
       "access_tier": "Free",
-      "last_successful_retrieval": "2026-11-26T11:52:38Z",
+      "last_successful_retrieval": "2026-11-27T11:45:40Z",
       "status": "healthy",
-      "record_count": 474,
+      "record_count": 477,
       "rate_limit_info": "Public GET endpoint; refreshed on scheduled workflow runs",
       "limitations": "Reflects OpenRouter routing prices, which may differ from direct first-party provider pricing.",
       "errors": []
@@ -55,7 +55,7 @@
       "data_obtained": "Open-weight GGUF model repositories, creators, download counts, likes, tags, and licenses.",
       "auth_required": "No (public Hub API; optional HF_TOKEN for higher limits)",
       "access_tier": "Free",
-      "last_successful_retrieval": "2026-11-26T11:52:38Z",
+      "last_successful_retrieval": "2026-11-27T11:45:40Z",
       "status": "healthy",
       "record_count": 40,
       "rate_limit_info": "Public Hub API rate limits apply",

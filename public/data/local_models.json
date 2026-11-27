@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "dataset": "local_models",
-  "retrieved_at": "2026-11-26T11:52:31Z",
+  "retrieved_at": "2026-11-27T11:45:33Z",
   "source_summary": {
     "source_id": "huggingface",
     "source_name": "Hugging Face Hub API",
@@ -14,7 +14,7 @@
       "model_name": "audio.cpp-gguf",
       "creator": "audio-cpp",
       "format": "GGUF",
-      "downloads": 10014231,
+      "downloads": 10003945,
       "likes": 344,
       "license": "other",
       "tags": [
@@ -32,7 +32,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/audio-cpp/audio.cpp-gguf",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -41,8 +41,8 @@
       "model_name": "Qwen3.8-27B-GGUF",
       "creator": "unsloth",
       "format": "GGUF",
-      "downloads": 8181570,
-      "likes": 7124,
+      "downloads": 8450803,
+      "likes": 7158,
       "license": "apache-2.0",
       "tags": [
         "gguf",
@@ -59,7 +59,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -68,8 +68,8 @@
       "model_name": "Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
       "creator": "ISTA-DASLab",
       "format": "GGUF",
-      "downloads": 7683242,
-      "likes": 1341,
+      "downloads": 7730694,
+      "likes": 1346,
       "license": "apache-2.0",
       "tags": [
         "gguf",
@@ -86,7 +86,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -113,7 +113,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/Serveurperso/YuE2-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -122,8 +122,8 @@
       "model_name": "Ornith-1.5-9B-GGUF",
       "creator": "ornith-ai",
       "format": "GGUF",
-      "downloads": 5086272,
-      "likes": 827,
+      "downloads": 5180675,
+      "likes": 840,
       "license": "mit",
       "tags": [
         "transformers",
@@ -137,7 +137,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -146,8 +146,8 @@
       "model_name": "Huihui-Qwen3.8-27B-abliterated-GGUF",
       "creator": "huihui-ai",
       "format": "GGUF",
-      "downloads": 4628141,
-      "likes": 2658,
+      "downloads": 4694969,
+      "likes": 2704,
       "license": "apache-2.0",
       "tags": [
         "transformers",
@@ -164,61 +164,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
-      "verification_status": "verified"
-    },
-    {
-      "source_id": "huggingface:unsloth/gemma-4-26B-A4B-it-GGUF",
-      "model_id": "unsloth/gemma-4-26B-A4B-it-GGUF",
-      "model_name": "gemma-4-26B-A4B-it-GGUF",
-      "creator": "unsloth",
-      "format": "GGUF",
-      "downloads": 4342670,
-      "likes": 1338,
-      "license": "apache-2.0",
-      "tags": [
-        "gguf",
-        "gemma4",
-        "unsloth",
-        "gemma",
-        "google",
-        "image-text-to-text",
-        "base_model:google/gemma-4-26B-A4B-it",
-        "base_model:quantized:google/gemma-4-26B-A4B-it",
-        "license:apache-2.0",
-        "endpoints_compatible"
-      ],
-      "last_modified": null,
-      "source_url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF",
-      "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
-      "verification_status": "verified"
-    },
-    {
-      "source_id": "huggingface:huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
-      "model_id": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
-      "model_name": "Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
-      "creator": "huihui-ai",
-      "format": "GGUF",
-      "downloads": 4250081,
-      "likes": 149,
-      "license": "apache-2.0",
-      "tags": [
-        "transformers",
-        "gguf",
-        "abliterated",
-        "uncensored",
-        "GGUF",
-        "MTP",
-        "image-text-to-text",
-        "base_model:Qwen/Qwen3.6-35B-A3B",
-        "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
-        "license:apache-2.0"
-      ],
-      "last_modified": null,
-      "source_url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
-      "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -227,8 +173,8 @@
       "model_name": "Qwen3.8-Flash-Next-GGUF",
       "creator": "unsloth",
       "format": "GGUF",
-      "downloads": 4051762,
-      "likes": 1984,
+      "downloads": 4562115,
+      "likes": 1989,
       "license": "other",
       "tags": [
         "gguf",
@@ -245,7 +191,34 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
+      "verification_status": "verified"
+    },
+    {
+      "source_id": "huggingface:unsloth/gemma-4-26B-A4B-it-GGUF",
+      "model_id": "unsloth/gemma-4-26B-A4B-it-GGUF",
+      "model_name": "gemma-4-26B-A4B-it-GGUF",
+      "creator": "unsloth",
+      "format": "GGUF",
+      "downloads": 4494104,
+      "likes": 1343,
+      "license": "apache-2.0",
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "image-text-to-text",
+        "base_model:google/gemma-4-26B-A4B-it",
+        "base_model:quantized:google/gemma-4-26B-A4B-it",
+        "license:apache-2.0",
+        "endpoints_compatible"
+      ],
+      "last_modified": null,
+      "source_url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF",
+      "source_name": "Hugging Face Hub API",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -255,7 +228,7 @@
       "creator": "SC117",
       "format": "GGUF",
       "downloads": 4051113,
-      "likes": 1196,
+      "likes": 1203,
       "license": "apache-2.0",
       "tags": [
         "gguf",
@@ -272,7 +245,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -281,8 +254,8 @@
       "model_name": "Ornith-1.5-35B-A3B-GGUF",
       "creator": "ornith-ai",
       "format": "GGUF",
-      "downloads": 3718592,
-      "likes": 686,
+      "downloads": 3793528,
+      "likes": 700,
       "license": "mit",
       "tags": [
         "transformers",
@@ -296,34 +269,34 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
-      "source_id": "huggingface:ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "model_id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "model_name": "DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "creator": "ISTA-DASLab",
+      "source_id": "huggingface:huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
+      "model_id": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
+      "model_name": "Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
+      "creator": "huihui-ai",
       "format": "GGUF",
-      "downloads": 3682279,
-      "likes": 688,
-      "license": "mit",
+      "downloads": 3757656,
+      "likes": 150,
+      "license": "apache-2.0",
       "tags": [
+        "transformers",
         "gguf",
-        "gsq",
-        "rco",
-        "quantization",
-        "mixed-precision",
-        "ist-daslab",
-        "moe",
-        "deepseek",
-        "text-generation",
-        "conversational"
+        "abliterated",
+        "uncensored",
+        "GGUF",
+        "MTP",
+        "image-text-to-text",
+        "base_model:Qwen/Qwen3.6-35B-A3B",
+        "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+        "license:apache-2.0"
       ],
       "last_modified": null,
-      "source_url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "source_url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -332,8 +305,8 @@
       "model_name": "MiniMax-H3-GGUF",
       "creator": "unsloth",
       "format": "GGUF",
-      "downloads": 3674003,
-      "likes": 457,
+      "downloads": 3752877,
+      "likes": 460,
       "license": "other",
       "tags": [
         "gguf",
@@ -350,7 +323,34 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/unsloth/MiniMax-H3-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
+      "verification_status": "verified"
+    },
+    {
+      "source_id": "huggingface:ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "model_id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "model_name": "DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "creator": "ISTA-DASLab",
+      "format": "GGUF",
+      "downloads": 3682279,
+      "likes": 692,
+      "license": "mit",
+      "tags": [
+        "gguf",
+        "gsq",
+        "rco",
+        "quantization",
+        "mixed-precision",
+        "ist-daslab",
+        "moe",
+        "deepseek",
+        "text-generation",
+        "conversational"
+      ],
+      "last_modified": null,
+      "source_url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "source_name": "Hugging Face Hub API",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -359,7 +359,7 @@
       "model_name": "Qwen3-ASR-1.7B-gguf",
       "creator": "handy-computer",
       "format": "GGUF",
-      "downloads": 3403765,
+      "downloads": 3550420,
       "likes": 6,
       "license": "apache-2.0",
       "tags": [
@@ -377,7 +377,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/handy-computer/Qwen3-ASR-1.7B-gguf",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -386,7 +386,7 @@
       "model_name": "Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF",
       "creator": "cdiamond",
       "format": "GGUF",
-      "downloads": 3335303,
+      "downloads": 3252212,
       "likes": 55,
       "license": "apache-2.0",
       "tags": [
@@ -404,7 +404,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -431,7 +431,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/farbodtavakkoli/OTel-2.0-Decision-26B-A4B-4bit",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -440,8 +440,8 @@
       "model_name": "Qwen3.6-35B-A3B-MTP-GGUF",
       "creator": "unsloth",
       "format": "GGUF",
-      "downloads": 3049815,
-      "likes": 1087,
+      "downloads": 3103192,
+      "likes": 1088,
       "license": "apache-2.0",
       "tags": [
         "transformers",
@@ -458,7 +458,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -485,7 +485,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/handy-computer/parakeet-ultra-gguf",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -494,7 +494,7 @@
       "model_name": "Qwen3-VL-8B-Instruct-GGUF",
       "creator": "Qwen",
       "format": "GGUF",
-      "downloads": 2641272,
+      "downloads": 2688741,
       "likes": 230,
       "license": "apache-2.0",
       "tags": [
@@ -512,7 +512,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -521,8 +521,8 @@
       "model_name": "Qwen3.5-9B-GGUF",
       "creator": "unsloth",
       "format": "GGUF",
-      "downloads": 2562267,
-      "likes": 1155,
+      "downloads": 2593166,
+      "likes": 1157,
       "license": "apache-2.0",
       "tags": [
         "transformers",
@@ -539,7 +539,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -549,7 +549,7 @@
       "creator": "agentionai",
       "format": "GGUF",
       "downloads": 2518137,
-      "likes": 271,
+      "likes": 273,
       "license": "other",
       "tags": [
         "gguf",
@@ -566,34 +566,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
-      "verification_status": "verified"
-    },
-    {
-      "source_id": "huggingface:unsloth/gemma-4-12b-it-GGUF",
-      "model_id": "unsloth/gemma-4-12b-it-GGUF",
-      "model_name": "gemma-4-12b-it-GGUF",
-      "creator": "unsloth",
-      "format": "GGUF",
-      "downloads": 2510138,
-      "likes": 995,
-      "license": "apache-2.0",
-      "tags": [
-        "gguf",
-        "gemma4",
-        "unsloth",
-        "gemma",
-        "google",
-        "gemma4_unified",
-        "image-text-to-text",
-        "base_model:google/gemma-4-12B-it",
-        "base_model:quantized:google/gemma-4-12B-it",
-        "license:apache-2.0"
-      ],
-      "last_modified": null,
-      "source_url": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
-      "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -603,7 +576,7 @@
       "creator": "unsloth",
       "format": "GGUF",
       "downloads": 2445633,
-      "likes": 1414,
+      "likes": 1537,
       "license": "apache-2.0",
       "tags": [
         "gguf",
@@ -620,7 +593,34 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
+      "verification_status": "verified"
+    },
+    {
+      "source_id": "huggingface:unsloth/gemma-4-12b-it-GGUF",
+      "model_id": "unsloth/gemma-4-12b-it-GGUF",
+      "model_name": "gemma-4-12b-it-GGUF",
+      "creator": "unsloth",
+      "format": "GGUF",
+      "downloads": 2415369,
+      "likes": 997,
+      "license": "apache-2.0",
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "gemma4_unified",
+        "image-text-to-text",
+        "base_model:google/gemma-4-12B-it",
+        "base_model:quantized:google/gemma-4-12B-it",
+        "license:apache-2.0"
+      ],
+      "last_modified": null,
+      "source_url": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
+      "source_name": "Hugging Face Hub API",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -629,7 +629,7 @@
       "model_name": "VieNeu-TTS-v3-Turbo",
       "creator": "pnnbao-ump",
       "format": "GGUF",
-      "downloads": 2381848,
+      "downloads": 2381887,
       "likes": 118,
       "license": "apache-2.0",
       "tags": [
@@ -647,7 +647,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -656,7 +656,7 @@
       "model_name": "parakeet-unified-en-0.6b-gguf",
       "creator": "handy-computer",
       "format": "GGUF",
-      "downloads": 2353553,
+      "downloads": 2332077,
       "likes": 23,
       "license": "other",
       "tags": [
@@ -674,34 +674,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/handy-computer/parakeet-unified-en-0.6b-gguf",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
-      "verification_status": "verified"
-    },
-    {
-      "source_id": "huggingface:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
-      "model_id": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
-      "model_name": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
-      "creator": "DavidAU",
-      "format": "GGUF",
-      "downloads": 2236527,
-      "likes": 2192,
-      "license": "apache-2.0",
-      "tags": [
-        "gguf",
-        "MTP GGUFS",
-        "Regular GGUFS",
-        "NEO Imatrix",
-        "fine tune",
-        "unsloth",
-        "heretic",
-        "uncensored",
-        "abliterated",
-        "multi-stage tuned."
-      ],
-      "last_modified": null,
-      "source_url": "https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
-      "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -710,8 +683,8 @@
       "model_name": "Qwen3.8-27B-GGUF",
       "creator": "byteshape",
       "format": "GGUF",
-      "downloads": 2171142,
-      "likes": 226,
+      "downloads": 2228627,
+      "likes": 227,
       "license": "apache-2.0",
       "tags": [
         "transformers",
@@ -728,7 +701,61 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/byteshape/Qwen3.8-27B-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
+      "verification_status": "verified"
+    },
+    {
+      "source_id": "huggingface:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+      "model_id": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+      "model_name": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+      "creator": "DavidAU",
+      "format": "GGUF",
+      "downloads": 2180957,
+      "likes": 2230,
+      "license": "apache-2.0",
+      "tags": [
+        "gguf",
+        "MTP GGUFS",
+        "Regular GGUFS",
+        "NEO Imatrix",
+        "fine tune",
+        "unsloth",
+        "heretic",
+        "uncensored",
+        "abliterated",
+        "multi-stage tuned."
+      ],
+      "last_modified": null,
+      "source_url": "https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+      "source_name": "Hugging Face Hub API",
+      "retrieved_at": "2026-11-27T11:45:40Z",
+      "verification_status": "verified"
+    },
+    {
+      "source_id": "huggingface:unsloth/Qwen-Image-2.1-Turbo-GGUF",
+      "model_id": "unsloth/Qwen-Image-2.1-Turbo-GGUF",
+      "model_name": "Qwen-Image-2.1-Turbo-GGUF",
+      "creator": "unsloth",
+      "format": "GGUF",
+      "downloads": 2121983,
+      "likes": 115,
+      "license": "other",
+      "tags": [
+        "gguf",
+        "quantized",
+        "unsloth",
+        "qwen",
+        "image-generation",
+        "turbo",
+        "text-to-image",
+        "en",
+        "zh",
+        "base_model:Qwen/Qwen-Image-2.1-Turbo"
+      ],
+      "last_modified": null,
+      "source_url": "https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-GGUF",
+      "source_name": "Hugging Face Hub API",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -737,7 +764,7 @@
       "model_name": "ACE-Step-1.5-GGUF",
       "creator": "Serveurperso",
       "format": "GGUF",
-      "downloads": 2170826,
+      "downloads": 2098751,
       "likes": 123,
       "license": "mit",
       "tags": [
@@ -755,34 +782,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/Serveurperso/ACE-Step-1.5-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
-      "verification_status": "verified"
-    },
-    {
-      "source_id": "huggingface:peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
-      "model_id": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
-      "model_name": "Tiel-Coder-35B-A3B-GGUF-MTP",
-      "creator": "peculiar-ragdoll",
-      "format": "GGUF",
-      "downloads": 2153820,
-      "likes": 374,
-      "license": "mit",
-      "tags": [
-        "gguf",
-        "llama.cpp",
-        "qwen35moe",
-        "moe",
-        "imatrix",
-        "unsloth-dynamic",
-        "mtp",
-        "speculative-decoding",
-        "agentic-coding",
-        "token-efficient"
-      ],
-      "last_modified": null,
-      "source_url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
-      "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -791,8 +791,8 @@
       "model_name": "Qwen3.8-27B-Uncensored-GGUF",
       "creator": "JonathanColetti",
       "format": "GGUF",
-      "downloads": 2135073,
-      "likes": 2088,
+      "downloads": 2065292,
+      "likes": 2093,
       "license": "apache-2.0",
       "tags": [
         "llama.cpp",
@@ -809,34 +809,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
-      "verification_status": "verified"
-    },
-    {
-      "source_id": "huggingface:unsloth/Qwen-Image-2.1-Turbo-GGUF",
-      "model_id": "unsloth/Qwen-Image-2.1-Turbo-GGUF",
-      "model_name": "Qwen-Image-2.1-Turbo-GGUF",
-      "creator": "unsloth",
-      "format": "GGUF",
-      "downloads": 2121983,
-      "likes": 114,
-      "license": "other",
-      "tags": [
-        "gguf",
-        "quantized",
-        "unsloth",
-        "qwen",
-        "image-generation",
-        "turbo",
-        "text-to-image",
-        "en",
-        "zh",
-        "base_model:Qwen/Qwen-Image-2.1-Turbo"
-      ],
-      "last_modified": null,
-      "source_url": "https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-GGUF",
-      "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -846,7 +819,7 @@
       "creator": "prism-ml",
       "format": "GGUF",
       "downloads": 2024327,
-      "likes": 211,
+      "likes": 213,
       "license": "apache-2.0",
       "tags": [
         "llama.cpp",
@@ -863,34 +836,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
-      "verification_status": "verified"
-    },
-    {
-      "source_id": "huggingface:mixedbread-ai/mxbai-embed-large-v1",
-      "model_id": "mixedbread-ai/mxbai-embed-large-v1",
-      "model_name": "mxbai-embed-large-v1",
-      "creator": "mixedbread-ai",
-      "format": "GGUF",
-      "downloads": 1997802,
-      "likes": 852,
-      "license": "apache-2.0",
-      "tags": [
-        "sentence-transformers",
-        "onnx",
-        "safetensors",
-        "openvino",
-        "gguf",
-        "bert",
-        "feature-extraction",
-        "mteb",
-        "transformers.js",
-        "transformers"
-      ],
-      "last_modified": null,
-      "source_url": "https://huggingface.co/mixedbread-ai/mxbai-embed-large-v1",
-      "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -899,8 +845,8 @@
       "model_name": "Qwen3.6-35B-A3B-GGUF",
       "creator": "unsloth",
       "format": "GGUF",
-      "downloads": 1984290,
-      "likes": 1847,
+      "downloads": 2004850,
+      "likes": 1850,
       "license": "apache-2.0",
       "tags": [
         "transformers",
@@ -917,7 +863,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -927,7 +873,7 @@
       "creator": "peasantsmith",
       "format": "GGUF",
       "downloads": 1979344,
-      "likes": 134,
+      "likes": 136,
       "license": "mit",
       "tags": [
         "gguf",
@@ -944,34 +890,61 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/peasantsmith/GLM-5.3-Flash-Maya-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
-      "source_id": "huggingface:prism-ml/Ternary-Bonsai-2-2B-gguf",
-      "model_id": "prism-ml/Ternary-Bonsai-2-2B-gguf",
-      "model_name": "Ternary-Bonsai-2-2B-gguf",
-      "creator": "prism-ml",
+      "source_id": "huggingface:mixedbread-ai/mxbai-embed-large-v1",
+      "model_id": "mixedbread-ai/mxbai-embed-large-v1",
+      "model_name": "mxbai-embed-large-v1",
+      "creator": "mixedbread-ai",
       "format": "GGUF",
-      "downloads": 1898793,
-      "likes": 58,
+      "downloads": 1968232,
+      "likes": 853,
       "license": "apache-2.0",
       "tags": [
-        "llama.cpp",
+        "sentence-transformers",
+        "onnx",
+        "safetensors",
+        "openvino",
         "gguf",
-        "ternary",
-        "2-bit",
-        "llama-cpp",
-        "cuda",
-        "metal",
-        "on-device",
-        "hybrid-attention",
-        "vision"
+        "bert",
+        "feature-extraction",
+        "mteb",
+        "transformers.js",
+        "transformers"
       ],
       "last_modified": null,
-      "source_url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf",
+      "source_url": "https://huggingface.co/mixedbread-ai/mxbai-embed-large-v1",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
+      "verification_status": "verified"
+    },
+    {
+      "source_id": "huggingface:peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
+      "model_id": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
+      "model_name": "Tiel-Coder-35B-A3B-GGUF-MTP",
+      "creator": "peculiar-ragdoll",
+      "format": "GGUF",
+      "downloads": 1933843,
+      "likes": 375,
+      "license": "mit",
+      "tags": [
+        "gguf",
+        "llama.cpp",
+        "qwen35moe",
+        "moe",
+        "imatrix",
+        "unsloth-dynamic",
+        "mtp",
+        "speculative-decoding",
+        "agentic-coding",
+        "token-efficient"
+      ],
+      "last_modified": null,
+      "source_url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
+      "source_name": "Hugging Face Hub API",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -980,8 +953,8 @@
       "model_name": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "creator": "DavidAU",
       "format": "GGUF",
-      "downloads": 1873950,
-      "likes": 4387,
+      "downloads": 1919755,
+      "likes": 4440,
       "license": "apache-2.0",
       "tags": [
         "gguf",
@@ -998,7 +971,34 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
+      "verification_status": "verified"
+    },
+    {
+      "source_id": "huggingface:prism-ml/Ternary-Bonsai-2-2B-gguf",
+      "model_id": "prism-ml/Ternary-Bonsai-2-2B-gguf",
+      "model_name": "Ternary-Bonsai-2-2B-gguf",
+      "creator": "prism-ml",
+      "format": "GGUF",
+      "downloads": 1898793,
+      "likes": 59,
+      "license": "apache-2.0",
+      "tags": [
+        "llama.cpp",
+        "gguf",
+        "ternary",
+        "2-bit",
+        "llama-cpp",
+        "cuda",
+        "metal",
+        "on-device",
+        "hybrid-attention",
+        "vision"
+      ],
+      "last_modified": null,
+      "source_url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf",
+      "source_name": "Hugging Face Hub API",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -1007,7 +1007,7 @@
       "model_name": "Ornith-1.0-9B-GGUF",
       "creator": "ornith-ai",
       "format": "GGUF",
-      "downloads": 1830658,
+      "downloads": 1874840,
       "likes": 703,
       "license": "mit",
       "tags": [
@@ -1022,7 +1022,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -1031,7 +1031,7 @@
       "model_name": "MiniMax-H3",
       "creator": "DeepBeepMeep",
       "format": "GGUF",
-      "downloads": 1786982,
+      "downloads": 1797798,
       "likes": 96,
       "license": "Not Specified",
       "tags": [
@@ -1043,7 +1043,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/DeepBeepMeep/MiniMax-H3",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     },
     {
@@ -1053,7 +1053,7 @@
       "creator": "migtissera",
       "format": "GGUF",
       "downloads": 1750330,
-      "likes": 71,
+      "likes": 73,
       "license": "apache-2.0",
       "tags": [
         "gguf",
@@ -1070,7 +1070,7 @@
       "last_modified": null,
       "source_url": "https://huggingface.co/migtissera/Tess-4.5-27B-GGUF",
       "source_name": "Hugging Face Hub API",
-      "retrieved_at": "2026-11-26T11:52:38Z",
+      "retrieved_at": "2026-11-27T11:45:40Z",
       "verification_status": "verified"
     }
   ]
