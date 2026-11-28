@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "dataset": "releases",
-  "retrieved_at": "2026-11-27T11:45:33Z",
+  "retrieved_at": "2026-11-28T11:21:02Z",
   "source_summary": {
     "source_id": "github_releases",
     "source_name": "GitHub Releases API",
@@ -9,33 +9,33 @@
   },
   "data": [
     {
-      "source_id": "github-release:ggml-org/llama.cpp:460503460",
+      "source_id": "github-release:ggml-org/llama.cpp:461212757",
       "project": "ggml-org/llama.cpp",
       "category": "Local AI Runtime",
-      "title": "b12811",
-      "tag": "b12811",
+      "title": "b12823",
+      "tag": "b12823",
       "prerelease": true,
       "summary": "<details open>",
-      "published_at": "2026-11-27T11:14:55Z",
-      "event_date": "2026-11-27T09:09:42Z",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12811",
+      "published_at": "2026-11-28T01:24:25Z",
+      "event_date": "2026-11-27T14:32:42Z",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12823",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
-      "source_id": "github-release:ggml-org/llama.cpp:460316469",
+      "source_id": "github-release:ggml-org/llama.cpp:461205282",
       "project": "ggml-org/llama.cpp",
       "category": "Local AI Runtime",
-      "title": "b12810",
-      "tag": "b12810",
+      "title": "b12822",
+      "tag": "b12822",
       "prerelease": true,
       "summary": "<details open>",
-      "published_at": "2026-11-27T08:11:21Z",
-      "event_date": "2026-11-27T07:38:31Z",
-      "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12810",
+      "published_at": "2026-11-28T01:08:40Z",
+      "event_date": "2026-11-27T14:31:18Z",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12822",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -43,14 +43,14 @@
       "project": "ollama/ollama",
       "category": "Local AI Runtime",
       "title": "v0.40.19",
-      "tag": "v0.40.19-rc0",
-      "prerelease": true,
+      "tag": "v0.40.19",
+      "prerelease": false,
       "summary": "## What's Changed",
       "published_at": "2026-11-26T17:52:02Z",
       "event_date": "2026-11-26T06:20:48Z",
-      "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.19-rc0",
+      "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.19",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -65,7 +65,7 @@
       "event_date": "2026-11-25T21:42:31Z",
       "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.5",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -80,7 +80,7 @@
       "event_date": "2026-11-25T21:38:33Z",
       "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.13",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -95,7 +95,7 @@
       "event_date": "2026-11-25T09:37:38Z",
       "source_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -110,7 +110,7 @@
       "event_date": "2026-11-24T16:05:00Z",
       "source_url": "https://github.com/huggingface/transformers/releases/tag/v5.24.1",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -125,7 +125,7 @@
       "event_date": "2026-11-24T01:35:09Z",
       "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.18",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -140,7 +140,7 @@
       "event_date": "2026-11-24T03:54:49Z",
       "source_url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.45",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -155,7 +155,7 @@
       "event_date": "2026-11-21T12:09:57Z",
       "source_url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -170,7 +170,7 @@
       "event_date": "2026-11-19T17:59:45Z",
       "source_url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.44",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -185,7 +185,7 @@
       "event_date": "2026-11-17T14:40:08Z",
       "source_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.4",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -200,7 +200,7 @@
       "event_date": "2026-11-16T04:27:15Z",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -215,7 +215,7 @@
       "event_date": "2026-10-31T07:15:45Z",
       "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -230,7 +230,7 @@
       "event_date": "2025-09-30T06:07:16Z",
       "source_url": "https://github.com/microsoft/autogen/releases/tag/python-v0.7.5",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     },
     {
@@ -245,7 +245,7 @@
       "event_date": "2025-08-19T18:40:36Z",
       "source_url": "https://github.com/microsoft/autogen/releases/tag/python-v0.7.4",
       "source_name": "GitHub Releases API",
-      "retrieved_at": "2026-11-27T11:45:37Z",
+      "retrieved_at": "2026-11-28T11:21:08Z",
       "verification_status": "verified"
     }
   ]
